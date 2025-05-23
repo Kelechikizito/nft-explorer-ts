@@ -134,15 +134,6 @@ export default function Home() {
       const responseData: ApiResponse = await response.json();
       console.log(responseData);
       setData(responseData.data.ownedNfts);
-
-      if (responseData.data.ownedNfts.length > 0) {
-        showModal(
-          "Success!",
-          `Found ${responseData.data.ownedNfts.length} NFT${responseData.data.ownedNfts.length !== 1 ? 's' : ''} for this wallet.`,
-          "success"
-        );
-      }
-
     } catch (error) {
       console.error("Error fetching NFTs:", error);
 
