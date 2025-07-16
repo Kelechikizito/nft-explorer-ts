@@ -65,7 +65,7 @@ export async function GET(req: NextRequest) {
       () => alchemy.nft.getNftsForOwner(wallet, {
         excludeFilters: [], // Optional: exclude spam/airdrops
         includeFilters: [],
-        pageSize: 25,
+        //pageSize: 25,
       }),
       3, 
       1000
