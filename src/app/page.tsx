@@ -212,7 +212,7 @@ export default function Home() {
             className="px-5 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
             value={address}
             onChange={handleAddressChange}
-            onKeyPress={handleKeyPress}
+            onKeyDown={handleKeyPress}
             disabled={loading}
           />
 
